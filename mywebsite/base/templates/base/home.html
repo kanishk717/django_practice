@@ -1,0 +1,120 @@
+
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Kanishk Balasubramaniam</title>
+	<link href="{% static '/css/main.css'  %}" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script>
+        document.addEventListener('DOMContentLoaded', (event) => {
+             const githubButton = document.getElementById('facebook');
+                if (githubButton) {
+                githubButton.addEventListener('click', function() {
+                     window.location.href = 'https://www.github.com/kanishk717';
+                });
+            } else {
+                console.error('Button with ID "githubButton" not found.');
+            }
+        });
+    </script>
+</head>
+<body>
+	<br>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-3">
+				<div class="card card-body h-100  border-info" id="profile-wrapper">
+					<img id="profile-pic" src="{% static 'images/kbk.jpg' %}" >
+					<hr>
+					<h4>Hi I'm Kanishk!</h4>
+					<p>I love coding, doing research and collaborating</p>
+                    <h4>CONTACT</h4>
+                    <p><strong>E-mail:</strong>kanishkbk7@gmail.com</p>
+                    <p><strong>Mobile.No:</strong>7558108028</p>
+                    <p><strong>Address:</strong><address>2/148h,Thirumoorthy Nagar,PoongaNagar last,Iyampalayam,Tirupur-641605</address></p>
+				</div>
+			</div>
+
+			<div class="col-md-9">
+				<div class="card card-body h-100  border-info" id="unorder">
+					<h4>I'm a Fresher and I want to be a Developer</h4>
+					<hr>
+					<p>As an Engineer my career objective is to utilize my creativity and looking for a challenging role in an organization, which provides opportunities to enhance my skills and knowledge for the growth of the company.</p>
+                    <h4>EDUCATION</h4>
+                    <ul>
+                        <li><strong>B.E</strong></li><br>
+                        <li>KUMARAGURU COLLEGE OF TECHNOLOGY</li><br>
+                        <li>B.E in AUTOMOBILE ENGINEERING(2021-2024)</li><br>
+                        <li>CGPA-7.94</li><br>
+                        <li><strong>DIPLOMA</strong></li><br>
+                        <li>PSG Polytechnic College</li><br>
+                        <li>Diploma in AUTOMOBILE ENGINEERING(2018-2021)</li><br>
+                        <li>Percentage-85.34%</li><br>
+                        <li><strong>CLASS 10</strong></li><br>
+                        <li>Velavan Matric Hr.Sec.School(2017-2018)</li><br>
+                        <li>Percentage-85.43%</li>
+                        
+                    </ul>
+
+					<p>From below these are my accounts from different social media</p>
+
+					<ul class="social-links">
+						<li><button id="facebook"><img class="social"  src="{% static 'images/facebook.png' %}"></button></li>
+						<li><buttton id="linkedin"><img class="social" id="linkedin" src="{% static 'images/linkedin.png' %}"></buttton></li>
+						<li><img class="social" id="twitter" src="{% static 'images/twitter.png' %}"></li>
+						<li><img class="social" id="youtube" src="{% static 'images/youtube.png' %}"></li>
+					</ul>
+                   
+				</div>
+			</div>
+		</div>
+		<br>
+		<div class="row">
+			<div class="col-md-6">
+				<div class="card card-body h-100">
+					<h5>My Experience as a Developer</h5>
+					<hr>
+					<p>Full stack developer at FOI laboratories.</p>
+					<p>Designed, built and managed a lab management system as a sole developer. System supported thousands of customers with a UI for Lab Admins and a customer dashboard.</p>
+					</div>
+			</div>
+
+			<div class="col-md-6">
+				<div class="card card-body h-100">
+					<h5>What I Know</h5>
+					<hr>
+					<p>Python, Django, HTML/CSS, JavaScript/Jquery, React, Postgres, AWS and APIs such as google maps, JavaScript charts and a whole bunch more I can’t possibly mention in one sentence! ;)</p>
+					<p>PS: Working on Node JS, Mongo DB and Machine Learning.</p>
+				</div>
+			</div>
+		</div>
+		<br>
+		<div class="row">
+			<div class="col-md-6">
+				<div class="card card-body h-100">
+					<h5>How I Learn</h5>
+					<hr>
+					<p>Reverse Engineer & Build Ugly Prototypes First.</p>
+
+					<p>I can learn just about anything by having a final product to tear apart piece by piece. I break the code where I need to figure out why things work the way they do. Documentation is just a reference.</p>
+				</div>
+			</div>
+
+			<div class="col-md-6">
+				<div class="card card-body h-100">
+					<h5>My Short Term Goals</h5>
+				<hr>
+				<p>After almost two years of supporting my system at the lab I’m ready to learn something new. I'll collaborating and sharing my experience with others on my blog (SayHelloWorld.co) & youtube channel.</p>
+				<p>Aside from building small projects I would love to enter a position where I can be part of a bigger team & learn from others with more experience than myself.</p>
+
+				</div>
+			</div>
+		</div>
+		<br>
+	</div>
+
+
+</body>
+</html>
