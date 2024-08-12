@@ -60,7 +60,8 @@
 </head>
 <body>
     <h1>Password Generator</h1>
-    <form action="{% url 'password' %}">
+    <form method="POST" action="{% url 'password' %}">
+        {% csrf_token %}
         <select name="length">
             <option value="06">06 characters</option>
             <option value="07">07 characters</option>
@@ -80,9 +81,7 @@
         <br>
         <input type="checkbox" name="special_characters">Special characters
         <br>
-        <input type="submit" value="Generate password">
-        
+        <input type="submit" value="Genertae password">
 
-    </form>
 </body>
 </html>
